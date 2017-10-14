@@ -18,12 +18,12 @@ package org.springframework.data.elasticsearch.core;
 import org.elasticsearch.action.update.UpdateResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.cluster.metadata.AliasMetaData;
-import org.elasticsearch.common.Nullable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.elasticsearch.core.convert.ElasticsearchConverter;
 import org.springframework.data.elasticsearch.core.mapping.ElasticsearchPersistentEntity;
 import org.springframework.data.elasticsearch.core.query.*;
 import org.springframework.data.util.CloseableIterator;
+import org.springframework.lang.Nullable;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -47,7 +47,7 @@ public interface ElasticsearchOperations {
 	 * @return elasticsearch client
 	 */
 	Client getClient();
-
+DATAES-405 elasticsearch.common.Nullable -> org.springramework.lang.Nullable.
 	/**
 	 * Create an index for a class
 	 *
